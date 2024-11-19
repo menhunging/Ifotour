@@ -1,0 +1,55 @@
+.btn {
+  -webkit-appearance: none;
+  border-radius: 0;
+  position: relative;
+  color: $colorBlack;
+  border: 1px solid transparent;
+  display: inline-block;
+  transition: all 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 9px;
+
+  @include responsive1279 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &--blue {
+    color: $colorWhite;
+    border: solid 1px $colorBlue;
+    background-color: $colorBlue;
+
+    &:hover {
+      background-color: $colorBlack;
+      color: $colorWhite;
+    }
+  }
+
+  &--yellow {
+    color: $colorWhite;
+    border: solid 1px $colorYellow;
+    background-color: $colorYellow;
+
+    &:hover {
+      background-color: $colorBlack;
+      color: $colorWhite;
+    }
+  }
+}
+
+.btn-close {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='13' viewBox='0 0 14 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cline x1='0.990197' y1='11.9602' x2='12.3039' y2='0.646459' stroke='%2336a9db'/%3e%3cline x1='1.35355' y1='0.646691' x2='12.6673' y2='11.9604' stroke='%2336a9db'/%3e%3c/svg%3e ");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  margin-right: 16px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}

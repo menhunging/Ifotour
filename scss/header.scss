@@ -1,0 +1,200 @@
+.header {
+  position: relative;
+
+  &-top {
+    border-bottom: solid 1px $colorBlack-a2;
+
+    @include responsive767 {
+      border-bottom: 0;
+    }
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      font-size: 14px;
+      line-height: 24px;
+      padding: 8px 0;
+
+      @include responsive1279 {
+        font-size: 12px;
+        line-height: 14px;
+        gap: 24px;
+      }
+
+      @include responsive767 {
+        gap: 16px;
+      }
+    }
+
+    &__text {
+      @include responsive767 {
+        display: none;
+      }
+    }
+
+    &__phone {
+      @include text-decoration-hover($colorBlack);
+
+      @include responsive767 {
+        display: none;
+      }
+    }
+
+    &__social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-left: auto;
+
+      @include responsive1279 {
+        gap: 24px;
+      }
+
+      @include responsive767 {
+        gap: 16px;
+      }
+    }
+
+    &__social--phone {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='23' height='21' viewBox='0 0 23 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M16.6048 14.5315L16.6121 14.5337L16.6194 14.5358C18.0688 14.9536 19.6218 15.1856 21.2269 15.1856C21.3123 15.1856 21.3797 15.2177 21.4182 15.2519C21.4313 15.2636 21.4381 15.2723 21.4414 15.2775V19.0273C21.4414 19.1547 21.402 19.2429 21.3759 19.276C21.367 19.2872 21.361 19.2912 21.3536 19.2947C21.3462 19.2983 21.3105 19.314 21.2269 19.314C10.2837 19.314 1.36492 11.2405 1.35938 1.77394C1.39117 1.75643 1.44624 1.73371 1.52859 1.71541C1.61646 1.69588 1.71696 1.68555 1.81924 1.68555H6.0639C6.14928 1.68555 6.21674 1.71772 6.25521 1.75192C6.26828 1.76353 6.2751 1.77224 6.27842 1.77745C6.27984 3.22545 6.5314 4.63292 7.02352 5.95075C7.02371 5.95145 7.02383 5.952 7.0239 5.95239L7.02334 5.95394C7.0228 5.95522 7.02178 5.9574 7.01995 5.96043C7.01841 5.96298 7.01604 5.96655 7.01254 5.97097L4.67535 7.73951L3.99047 8.25775L4.39936 9.01303C6.24983 12.4311 9.68659 15.356 13.3409 16.9055L13.9988 17.1845L14.4758 16.6524L16.3483 14.5639C16.4122 14.5228 16.5101 14.5026 16.6048 14.5315ZM21.4442 15.2831C21.4441 15.2831 21.4436 15.2822 21.4431 15.2804C21.4441 15.2822 21.4443 15.2831 21.4442 15.2831ZM6.28121 1.78304C6.28111 1.78306 6.28065 1.78219 6.28013 1.78036C6.28105 1.7821 6.28131 1.78302 6.28121 1.78304Z' stroke='%2336A9DB' stroke-width='2'/%3e%3c/svg%3e ");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(0.9);
+      }
+
+      @include responsive767 {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+      }
+    }
+
+    &__social--telegram {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='31' height='31' viewBox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cmask id='mask0_160_1591' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='31' height='31'%3e%3crect x='0.441406' y='0.5' width='30' height='30' fill='url(%23pattern0_160_1591)'/%3e%3c/mask%3e%3cg mask='url(%23mask0_160_1591)'%3e%3crect x='-6.78125' y='0.5' width='44.4453' height='30' fill='%2336A9DB'/%3e%3c/g%3e%3cdefs%3e%3cpattern id='pattern0_160_1591' patternContentUnits='objectBoundingBox' width='1' height='1'%3e%3cuse xlink:href='%23image0_160_1591' transform='scale(0.01)'/%3e%3c/pattern%3e%3cimage id='image0_160_1591' width='100' height='100' xlink:href='data:image/png;base64,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'/%3e%3c/defs%3e%3c/svg%3e ");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(0.9);
+      }
+
+      @include responsive767 {
+        width: 25px;
+        height: 25px;
+        background-size: contain;
+      }
+    }
+
+    .btn {
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      @include responsive767 {
+        display: none;
+      }
+    }
+  }
+
+  &-bottom {
+    @include responsiveMinWidth768 {
+      display: flex !important;
+    }
+
+    @include responsive767 {
+      display: none;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 100dvh;
+      background-color: $colorWhite;
+      top: 0;
+      z-index: 5;
+      overflow: auto;
+    }
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+
+      @include responsive1279 {
+        padding: 10px 0;
+      }
+
+      @include responsive767 {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    .logo {
+      @include responsive767 {
+        left: -8px;
+      }
+    }
+
+    .btn-close {
+      display: none;
+
+      @include responsive767 {
+        display: flex;
+      }
+    }
+  }
+
+  .btn {
+    min-width: 222px;
+
+    @include responsive1279 {
+      min-width: initial;
+    }
+  }
+}
+
+.menu {
+  @include responsive1023 {
+    font-size: 10px;
+  }
+
+  .menu__list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    @include responsive1279 {
+      gap: 16px;
+    }
+
+    @include responsive1023 {
+      gap: 12px;
+    }
+
+    @include responsive767 {
+      flex-direction: column;
+      font-size: 16px;
+      gap: 24px;
+    }
+  }
+
+  .menu__item {
+  }
+}
