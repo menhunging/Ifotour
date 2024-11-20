@@ -163,6 +163,8 @@
 
   .btn {
     min-width: 222px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @include responsive1279 {
       min-width: initial;
@@ -196,5 +198,9 @@
   }
 
   .menu__item {
+  }
+
+  a {
+    @include text-decoration-hover($colorBlack);
   }
 }

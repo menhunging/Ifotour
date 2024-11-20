@@ -37,14 +37,6 @@ $(document).ready(function () {
     }
   }
 
-  if ($(".tabs").length > 0) {
-    $(".tabs").tabslet({
-      mouseevent: "click",
-      attribute: "href",
-      animation: true,
-    });
-  }
-
   if ($("[data-fancybox]").length > 0) {
     Fancybox.bind("[data-fancybox]", {
       speedIn: 600,
@@ -52,52 +44,68 @@ $(document).ready(function () {
     });
   }
 
-  if ($(".phone-input").length > 0) {
-    $(".phone-input").map(function () {
-      $(this).inputmask({
-        mask: "+7(999) 999-99-99",
-        placeholder: "*",
-        showMaskOnHover: false,
-        showMaskOnFocus: true,
-        clearIncomplete: true,
-      });
+  if ($(".faq").length > 0) {
+    $(".faq-head").on("click", function () {
+      $(this).toggleClass("opened").next(".faq-body").stop().slideToggle();
     });
   }
 
-  if ($(".thisYear").length > 0) {
-    let date = new Date();
-    $(".thisYear").text(date.getFullYear());
-  }
+  // TODO удалить это потом если не понадобиться
 
-  if ($(".modal").length > 0) {
-    MicroModal.init({
-      openTrigger: "data-modal",
-      onShow: () => {
-        $("body").addClass("modal-open");
-      },
-      onClose: () => {
-        $("body").removeClass("modal-open");
-      },
-    });
+  // if ($(".tabs").length > 0) {
+  //   $(".tabs").tabslet({
+  //     mouseevent: "click",
+  //     attribute: "href",
+  //     animation: true,
+  //   });
+  // }
 
-    $("[data-modal]").map(function () {
-      $(this).click((e) => {
-        e.preventDefault();
-        $("body").addClass("modal-open");
-      });
-    });
+  // if ($(".phone-input").length > 0) {
+  //   $(".phone-input").map(function () {
+  //     $(this).inputmask({
+  //       mask: "+7(999) 999-99-99",
+  //       placeholder: "*",
+  //       showMaskOnHover: false,
+  //       showMaskOnFocus: true,
+  //       clearIncomplete: true,
+  //     });
+  //   });
+  // }
 
-    $("[data-micromodal-close]").map(function () {
-      $(this).click((e) => {
-        // e.preventDefault();
-        if ($(this).attr("data-modal")) {
-          setTimeout(() => {
-            $("body").addClass("modal-open");
-          }, 0.1);
-        }
-      });
-    });
-  }
+  // if ($(".thisYear").length > 0) {
+  //   let date = new Date();
+  //   $(".thisYear").text(date.getFullYear());
+  // }
+
+  // if ($(".modal").length > 0) {
+  //   MicroModal.init({
+  //     openTrigger: "data-modal",
+  //     onShow: () => {
+  //       $("body").addClass("modal-open");
+  //     },
+  //     onClose: () => {
+  //       $("body").removeClass("modal-open");
+  //     },
+  //   });
+
+  //   $("[data-modal]").map(function () {
+  //     $(this).click((e) => {
+  //       e.preventDefault();
+  //       $("body").addClass("modal-open");
+  //     });
+  //   });
+
+  //   $("[data-micromodal-close]").map(function () {
+  //     $(this).click((e) => {
+  //       // e.preventDefault();
+  //       if ($(this).attr("data-modal")) {
+  //         setTimeout(() => {
+  //           $("body").addClass("modal-open");
+  //         }, 0.1);
+  //       }
+  //     });
+  //   });
+  // }
 
   // if ($(".grettings-slider").length > 0) {
   //   const swiper = new Swiper(".grettings-slider", {

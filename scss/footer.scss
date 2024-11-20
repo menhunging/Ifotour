@@ -37,6 +37,7 @@
 
   .footer-logo {
     grid-column: 1/1;
+    transition: all 0.3s;
 
     @include responsive1279 {
       width: 200px;
@@ -45,6 +46,10 @@
     @include responsive767 {
       width: 130px;
       order: 1;
+    }
+
+    &:hover {
+      transform: scale(0.9);
     }
   }
 
@@ -194,8 +199,8 @@
     }
 
     & + .btn {
-      padding-top: 5px;
-      padding-bottom: 5px;
+      padding: 10px 5px;
+      width: 100%;
 
       @include responsive1279 {
         width: 100%;
