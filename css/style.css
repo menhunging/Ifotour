@@ -3309,6 +3309,15 @@ h3,
   align-items: center;
   padding: 0 50px;
   cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  -webkit-transition: text-decoration 0.3s;
+  -moz-transition: text-decoration 0.3s;
+  -o-transition: text-decoration 0.3s;
+  transition: text-decoration 0.3s;
+}
+.faq .faq-head:hover {
+  text-decoration-color: rgb(57, 57, 57);
 }
 @media (max-width: 1279px) {
   .faq .faq-head {

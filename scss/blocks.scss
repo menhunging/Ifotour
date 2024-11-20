@@ -1903,6 +1903,8 @@
     padding: 0 50px;
     cursor: pointer;
 
+    @include text-decoration-hover($colorBlack);
+
     @include responsive1279 {
       padding: 0 20px;
       min-height: 40px;
