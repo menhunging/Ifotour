@@ -189,9 +189,16 @@
   .btn {
     margin-top: 30px;
     min-width: 220px;
+    min-height: 50px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 38px;
 
     @include responsive1279 {
       margin-top: 20px;
+      min-height: 40px;
+      padding: 0;
     }
 
     @include responsive767 {
@@ -275,7 +282,7 @@
       transform: rotate(19deg);
       backdrop-filter: blur(50px);
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
-      top: -370px;
+      top: -410px;
       right: 60px;
 
       @include responsive1279 {
@@ -300,7 +307,7 @@
       backdrop-filter: blur(50px);
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
       right: 330px;
-      top: -370px;
+      top: -410px;
       z-index: -1;
 
       @include responsive1279 {
@@ -617,7 +624,7 @@
       left: calc(-100% + 24px);
       top: 0;
       width: 200%;
-      height: 221px;
+      height: 200px;
       background-color: rgba(154, 214, 237, 1);
       pointer-events: none;
       z-index: -1;
@@ -1638,7 +1645,15 @@
 
     .reviews-line__text {
       p {
-        max-width: 360px;
+        max-width: 680px;
+
+        @include responsive1439 {
+          max-width: 620px;
+        }
+
+        @include responsive1279 {
+          max-width: 370px;
+        }
 
         @include responsive767 {
           max-width: 100%;
@@ -1857,6 +1872,10 @@
       width: 100%;
     }
   }
+
+  p{
+    font-weight: 700;
+  }
 }
 
 .faq {
@@ -1907,7 +1926,7 @@
 
     @include responsive1279 {
       padding: 0 20px;
-      min-height: 40px;
+      min-height: 30px;
     }
 
     @include responsive767 {
@@ -1961,8 +1980,13 @@
   }
 
   .caption {
+    font-family: $fontMain;
+    font-size: 22px;
+    line-height: 30px;
+
     @include responsive1279 {
-      font-size: 22px;
+      font-size: 12px;
+      line-height: 16px;
     }
   }
 }

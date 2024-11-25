@@ -1,6 +1,6 @@
 $(document).ready(function () {
   if ($(".burger").length > 0) {
-    let menu = $(".header-bottom");
+    let menu = $(".header-new-bottom");
     let burger = $(".burger");
     let burgerСlose = $(".btn-close");
     let body = $("body");

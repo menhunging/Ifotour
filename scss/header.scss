@@ -1,4 +1,4 @@
-.header {
+.header-new {
   position: relative;
 
   &-top {
@@ -172,7 +172,7 @@
   }
 }
 
-.menu {
+.menu-new {
   @include responsive1023 {
     font-size: 10px;
   }
