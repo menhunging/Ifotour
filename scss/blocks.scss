@@ -1873,7 +1873,7 @@
     }
   }
 
-  p{
+  p {
     font-weight: 700;
   }
 }
@@ -1987,6 +1987,105 @@
     @include responsive1279 {
       font-size: 12px;
       line-height: 16px;
+    }
+  }
+}
+
+.not-page {
+  padding: 35px 0;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+
+    @include responsive767 {
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+
+  .not-page__media {
+    width: 391px;
+    height: 350px;
+
+    @include responsive767 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .not-page__content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 613px;
+
+    @include responsive767 {
+      max-width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      text-align: center;
+    }
+  }
+
+  .not-page__error {
+    position: relative;
+    font-size: 210px;
+    line-height: 210px;
+    color: $colorWhite;
+    text-shadow: 4px 3px 8px rgba(123, 121, 121, 0.77);
+    margin-bottom: 30px;
+    display: block;
+
+    @include responsive1279 {
+      font-size: 180px;
+      line-height: 180px;
+    }
+
+    @include responsive767 {
+      font-size: 140px;
+      line-height: 140px;
+    }
+
+    @include before {
+      top: 0;
+      left: 0;
+      background-color: rgba(246, 243, 243, 1);
+      filter: blur(80px);
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+  }
+
+  .not-page__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(192, 192, 192, 1);
+
+    @include responsive767 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  .btn {
+    max-width: 221px;
+    font-size: 16px;
+    padding: 5px;
+    min-height: inherit;
+
+    @include responsive767 {
+      max-width: 320px;
+      width: 100%;
     }
   }
 }
