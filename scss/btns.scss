@@ -50,3 +50,14 @@
   top: 10px;
   right: 0;
 }
+
+.btn-favorite {
+  min-height: initial;
+  padding: 0;
+  width: 20px;
+  height: 17px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='20' viewBox='0 0 22 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5104 18.6264C11.1704 18.7464 10.6104 18.7464 10.2704 18.6264C7.37038 17.6364 0.890381 13.5064 0.890381 6.50638C0.890381 3.41638 3.38038 0.916382 6.45038 0.916382C8.27038 0.916382 9.88038 1.79638 10.8904 3.15638C11.9004 1.79638 13.5204 0.916382 15.3304 0.916382C18.4004 0.916382 20.8904 3.41638 20.8904 6.50638C20.8904 13.5064 14.4104 17.6364 11.5104 18.6264Z' stroke='%235C6672' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+}

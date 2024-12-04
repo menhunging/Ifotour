@@ -50,6 +50,51 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".selectric").length > 0) {
+    $(".selectric").map(function () {
+      $(this).selectric({
+        onOpen: function (element) {},
+        onChange: function (element) {},
+        onClose: function (element) {},
+      });
+    });
+  }
+
+  if ($(".slider-hot").length > 0) {
+    const swiper = new Swiper(".slider-hot", {
+      slidesPerView: 4,
+      spaceBetween: 16,
+      watchSlidesProgress: true,
+      loop: false,
+      navigation: {
+        prevEl: ".hot-deals .swiperBtnPrev",
+        nextEl: ".hot-deals .swiperBtnNext",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.25,
+          spaceBetween: 16,
+        },
+        390: {
+          slidesPerView: 1.5,
+          spaceBetween: 16,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 16,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 16,
+        },
+      },
+    });
+  }
+
   // TODO удалить это потом если не понадобиться
 
   // if ($(".tabs").length > 0) {

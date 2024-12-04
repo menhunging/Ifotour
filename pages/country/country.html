@@ -91,7 +91,953 @@
         <main class="main">
 
             <div class="country-page">
-                
+                <div class="country-page-grettings">
+                    <div class="container">
+                        <h1 class="caption caption--h1">ТУРЦИЯ ИЗ МОСКВЫ</h1>
+                        <strong class="country-page-grettings__text">Отдых для тех, кто ценит комфорт</strong>
+                    </div>
+                    <div class="picture-block">
+                        <picture>
+                            <source type="image/webp" srcset="./../../img/pic-country-grettings.webp" />
+                            <img src="./../../img/pic-country-grettings.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+                            <li class="breadcrumbs__item"><a href="#">Поиск тура</a></li>
+                            <li class="breadcrumbs__item"><span>Турция</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="country-catalog">
+                    <div class="container">
+                        <div class="country-catalog__inner">
+
+                            <div class="country-catalog__left">
+
+                                <div class="coutry-filter">
+                                    <div class="coutry-filter__row">
+                                        <span class="coutry-filter__title">Тип отдыха</span>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="f1">
+                                            <label for="f1">Тип отдыха</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="f2">
+                                            <label for="f2">Горящие</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="f3">
+                                            <label for="f3">Туры выходного дня</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="f4">
+                                            <label for="f4">Отдых с детьми</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="coutry-filter__row">
+                                        <span class="coutry-filter__title">Класс отеля</span>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="cls1">
+                                            <label for="cls1">Любой</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="cls2">
+                                            <label for="cls2">
+                                                <div class="rating">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                                5 звезд
+                                            </label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="cls3">
+                                            <label for="cls3">
+                                                <div class="rating">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                                4 звезды
+                                            </label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="cls4">
+                                            <label for="cls4">
+                                                <div class="rating">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                                3 звезды
+                                            </label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="cls5">
+                                            <label for="cls5">
+                                                <div class="rating">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                                1-2 звезды
+                                            </label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="cls6">
+                                            <label for="cls6">без звезд</label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="coutry-filter__row">
+                                        <span class="coutry-filter__title">Город вылета</span>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="city1">
+                                            <label for="city1">Москва</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="city2">
+                                            <label for="city2">Краснодар</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="city3">
+                                            <label for="city3">Сочи</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="city4">
+                                            <label for="city4">Уфа</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="coutry-filter__row">
+                                        <span class="coutry-filter__title">Количество дней</span>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="day1">
+                                            <label for="day1">Все</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="day2">
+                                            <label for="day2">3 дня</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="day3">
+                                            <label for="day3">7 дней</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="day4">
+                                            <label for="day4">10 дней</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="day5">
+                                            <label for="day5">15 дней</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="coutry-filter__row">
+                                        <span class="coutry-filter__title">Сезон</span>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="s1">
+                                            <label for="s1">Зима</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="s2">
+                                            <label for="s2">Весна</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="s3">
+                                            <label for="s3">Лето</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="s4">
+                                            <label for="s4">Осень</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="coutry-filter__row">
+                                        <span class="coutry-filter__title">Линия пляжа</span>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="b1">
+                                            <label for="b1">Любой</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="b2">
+                                            <label for="b2">Песчаный</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="b3">
+                                            <label for="b3">Галечный</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="b4">
+                                            <label for="b4">Песчано-галечный</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="b5">
+                                            <label for="b5">Собственный пляж отеля</label>
+                                        </div>
+                                        <div class="check-block">
+                                            <input type="checkbox" id="b6">
+                                            <label for="b6">Близко к центру</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="country-catalog__right">
+
+                                <h2 class="caption caption--mobile">Турция</h2>
+
+                                <div class="country-links">
+                                    <ul>
+                                        <li class="active">
+                                            <a href="#">
+                                                <span class="country-links__icon">
+                                                    <picture>
+                                                        <source type="image/webp"
+                                                            srcset="./../../img/country-ic1.webp" />
+                                                        <img src="./../../img/country-ic1.png" alt="">
+                                                    </picture>
+                                                </span>
+                                                <span class="country-links__text">О стране</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="country-links__icon">
+                                                    <picture>
+                                                        <source type="image/webp"
+                                                            srcset="./../../img/country-ic2.webp" />
+                                                        <img src="./../../img/country-ic2.png" alt="">
+                                                    </picture>
+                                                </span>
+                                                <span class="country-links__text">Туры</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="country-links__icon">
+                                                    <picture>
+                                                        <source type="image/webp"
+                                                            srcset="./../../img/country-ic3.webp" />
+                                                        <img src="./../../img/country-ic3.png" alt="">
+                                                    </picture>
+                                                </span>
+                                                <span class="country-links__text">Отели</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="country-links__icon">
+                                                    <picture>
+                                                        <source type="image/webp"
+                                                            srcset="./../../img/country-ic4.webp" />
+                                                        <img src="./../../img/country-ic4.png" alt="">
+                                                    </picture>
+                                                </span>
+                                                <span class="country-links__text">Виза</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="country-links__icon">
+                                                    <picture>
+                                                        <source type="image/webp"
+                                                            srcset="./../../img/country-ic5.webp" />
+                                                        <img src="./../../img/country-ic5.png" alt="">
+                                                    </picture>
+                                                </span>
+                                                <span class="country-links__text">Карта</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="country-links__icon">
+                                                    <picture>
+                                                        <source type="image/webp"
+                                                            srcset="./../../img/country-ic6.webp" />
+                                                        <img src="./../../img/country-ic6.jpg" alt="">
+                                                    </picture>
+                                                </span>
+                                                <span class="country-links__text">Погода</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="country-text">
+                                    <p>Турция — страна, где история и современность переплетаются в гармоничном танце,
+                                        создавая уникальную атмосферу, которая очаровывает каждого путешественника.
+                                        Здесь, на стыке двух континентов, вы сможете насладиться богатством культуры,
+                                        изумительной природой и теплым гостеприимством местных жителей.
+                                        На южных берегах страны раскинулись солнечные курорты, которые приглашает вас на
+                                        отдых. Пляжи с золотистым песком и лазурные воды Средиземного моря создают
+                                        идеальные условия для полноценного релакса. </p>
+                                </div>
+
+                                <div class="country-mobile-filter">
+                                    <div class="input-item">
+                                        <select class="selectric">
+                                            <option value="">Москва</option>
+                                            <option value="">Москва</option>
+                                            <option value="">Москва</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-item">
+                                        <select class="selectric">
+                                            <option value="">Москва</option>
+                                            <option value="">Москва</option>
+                                            <option value="">Москва</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-item">
+                                        <select class="selectric">
+                                            <option value="">Горящие</option>
+                                            <option value="">Горящие</option>
+                                            <option value="">Горящие</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-item">
+                                        <select class="selectric">
+                                            <option value="">Декабрь</option>
+                                            <option value="">Декабрь</option>
+                                            <option value="">Декабрь</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-item">
+                                        <select class="selectric">
+                                            <option value="">11.11.2024 - 16.11.2024</option>
+                                            <option value="">11.11.2024 - 16.11.2024</option>
+                                            <option value="">11.11.2024 - 16.11.2024</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-item">
+                                        <select class="selectric">
+                                            <option value="">2 взрослых</option>
+                                            <option value="">2 взрослых</option>
+                                            <option value="">2 взрослых</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-item">
+                                        <select class="selectric">
+                                            <option value="">На 5-8 ночей</option>
+                                            <option value="">На 5-8 ночей</option>
+                                            <option value="">На 5-8 ночей</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-item">
+                                        <select class="selectric">
+                                            <option value="">5 звезд</option>
+                                            <option value="">5 звезд</option>
+                                            <option value="">5 звезд</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-item">
+                                        <select class="selectric">
+                                            <option value="">1 линия</option>
+                                            <option value="">1 линия</option>
+                                            <option value="">1 линия</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn--yellow">Найти</button>
+                                    <a href="#" class="country-mobile-filter__link">Расширенный поиск</a>
+                                </div>
+
+                                <div class="list-catalog">
+
+                                    <div class="list-catalog__head">
+                                        <div class="list-catalog__sort">
+                                            <span class="list-catalog__title">Сортировать по</span>
+                                            <span class="list-catalog__data active">
+                                                Цене
+                                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M4.51485 0.464867C4.31959 0.269605 4.00301 0.269605 3.80775 0.464867L0.625766 3.64685C0.430504 3.84211 0.430504 4.15869 0.625766 4.35395C0.821029 4.54922 1.13761 4.54922 1.33287 4.35395L4.1613 1.52553L6.98973 4.35395C7.18499 4.54922 7.50157 4.54922 7.69683 4.35395C7.8921 4.15869 7.8921 3.84211 7.69683 3.64685L4.51485 0.464867ZM4.6613 13.6342L4.6613 0.81842L3.6613 0.81842L3.6613 13.6342L4.6613 13.6342Z"
+                                                        fill="#B0B0B0" />
+                                                </svg>
+                                            </span>
+                                            <span class="list-catalog__data">
+                                                Рейтингу
+                                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M4.51485 0.464867C4.31959 0.269605 4.00301 0.269605 3.80775 0.464867L0.625766 3.64685C0.430504 3.84211 0.430504 4.15869 0.625766 4.35395C0.821029 4.54922 1.13761 4.54922 1.33287 4.35395L4.1613 1.52553L6.98973 4.35395C7.18499 4.54922 7.50157 4.54922 7.69683 4.35395C7.8921 4.15869 7.8921 3.84211 7.69683 3.64685L4.51485 0.464867ZM4.6613 13.6342L4.6613 0.81842L3.6613 0.81842L3.6613 13.6342L4.6613 13.6342Z"
+                                                        fill="#B0B0B0" />
+                                                </svg>
+                                            </span>
+                                            <span class="list-catalog__data">
+                                                Популярности
+                                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M4.51485 0.464867C4.31959 0.269605 4.00301 0.269605 3.80775 0.464867L0.625766 3.64685C0.430504 3.84211 0.430504 4.15869 0.625766 4.35395C0.821029 4.54922 1.13761 4.54922 1.33287 4.35395L4.1613 1.52553L6.98973 4.35395C7.18499 4.54922 7.50157 4.54922 7.69683 4.35395C7.8921 4.15869 7.8921 3.84211 7.69683 3.64685L4.51485 0.464867ZM4.6613 13.6342L4.6613 0.81842L3.6613 0.81842L3.6613 13.6342L4.6613 13.6342Z"
+                                                        fill="#B0B0B0" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <a href="#" class="list-catalog__curr">Сгруппировать по курортам</a>
+                                        <a href="#" class="list-catalog__map">Показать на карте</a>
+                                    </div>
+
+                                    <div class="list-catalog__item">
+                                        <div class="picture-block">
+                                            <picture>
+                                                <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                <img src="./../../img/pic-hotel.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="list-catalog__content">
+                                            <div class="list-catalog__controls">
+                                                <div class="rating">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                                <a href="#" class="btn btn-favorite"></a>
+                                            </div>
+                                            <a href="#" class="link">Gentl Grown Sanya Seashore 4*</a>
+                                            <span class="desc">Дадунхай, Хайнань</span>
+                                            <p>
+                                                Отель в районе Фатих, в 400 м от мечети Сулеймание. В пешей доступности
+                                                — Галатский мост и остановка трамвая.
+                                            </p>
+                                            <div class="list-catalog__bottom">
+                                                <ul class="tags">
+                                                    <li>Об отеле</li>
+                                                    <li>Отзывы</li>
+                                                    <li>На карте</li>
+                                                </ul>
+                                                <div class="list-catalog__prices">
+                                                    <span class="list-catalog__price">132 012 <span
+                                                            class="cur">РУБ.</span></span>
+                                                    <a href="#" class="btn btn--blue list-catalog__btn"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-catalog__item">
+                                        <div class="picture-block">
+                                            <picture>
+                                                <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                <img src="./../../img/pic-hotel.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="list-catalog__content">
+                                            <div class="list-catalog__controls">
+                                                <div class="rating">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                                <a href="#" class="btn btn-favorite"></a>
+                                            </div>
+                                            <a href="#" class="link">Gentl Grown Sanya Seashore 4*</a>
+                                            <span class="desc">Дадунхай, Хайнань</span>
+                                            <p>
+                                                Отель в районе Фатих, в 400 м от мечети Сулеймание. В пешей доступности
+                                                — Галатский мост и остановка трамвая.
+                                            </p>
+                                            <div class="list-catalog__bottom">
+                                                <ul class="tags">
+                                                    <li>Об отеле</li>
+                                                    <li>Отзывы</li>
+                                                    <li>На карте</li>
+                                                </ul>
+                                                <div class="list-catalog__prices">
+                                                    <span class="list-catalog__price">132 012 <span
+                                                            class="cur">РУБ.</span></span>
+                                                    <a href="#" class="btn btn--blue list-catalog__btn"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-catalog__item">
+                                        <div class="picture-block">
+                                            <picture>
+                                                <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                <img src="./../../img/pic-hotel.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="list-catalog__content">
+                                            <div class="list-catalog__controls">
+                                                <div class="rating">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                                <a href="#" class="btn btn-favorite"></a>
+                                            </div>
+                                            <a href="#" class="link">Gentl Grown Sanya Seashore 4*</a>
+                                            <span class="desc">Дадунхай, Хайнань</span>
+                                            <p>
+                                                Отель в районе Фатих, в 400 м от мечети Сулеймание. В пешей доступности
+                                                — Галатский мост и остановка трамвая.
+                                            </p>
+                                            <div class="list-catalog__bottom">
+                                                <ul class="tags">
+                                                    <li>Об отеле</li>
+                                                    <li>Отзывы</li>
+                                                    <li>На карте</li>
+                                                </ul>
+                                                <div class="list-catalog__prices">
+                                                    <span class="list-catalog__price">132 012 <span
+                                                            class="cur">РУБ.</span></span>
+                                                    <a href="#" class="btn btn--blue list-catalog__btn"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-catalog__footer">
+                                        <a href="#" class="btn btn--blue">Смотреть больше</a>
+                                    </div>
+                                </div>
+
+                                <div class="text-slice">
+                                    <div class="text-slice__content">
+                                        <h2 class="caption caption--h4">Где Встречаются Восток и Запад</h2>
+                                        <p>Турция — страна, где история и современность переплетаются в гармоничном
+                                            танце, создавая
+                                            уникальную атмосферу, которая очаровывает каждого путешественника. Здесь, на
+                                            стыке двух
+                                            континентов, вы сможете насладиться богатством культуры, изумительной
+                                            природой и теплым
+                                            гостеприимством местных жителей.</p>
+
+                                        <p>На южных берегах страны раскинулись солнечные курорты, которые приглашает вас
+                                            на отдых. Пляжи
+                                            с золотистым песком и лазурные воды Средиземного моря создают идеальные
+                                            условия для
+                                            полноценного релакса. </p>
+                                    </div>
+
+                                    <div class="picture-block picture-block--one">
+                                        <picture>
+                                            <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                            <img src="./../../img/pic-hotel.jpg" alt="">
+                                        </picture>
+                                    </div>
+
+                                    <div class="picture-block picture-block--two">
+                                        <picture>
+                                            <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                            <img src="./../../img/pic-hotel.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="hot-deals">
+                                    <div class="hot-deals__head">
+                                        <h2 class="caption caption--h4">Горящие предложения</h2>
+                                        <div class="swiper-controls">
+                                            <button class="swiperBtnPrev"></button>
+                                            <button class="swiperBtnNext"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="hot-deals__body">
+                                        <div class="slider-hot swiper">
+                                            <div class="hot-deals__list swiper-wrapper">
+                                                <div class="hot-deals__item swiper-slide">
+                                                    <div class="picture-block">
+                                                        <div class="hot"></div>
+                                                        <picture>
+                                                            <source type="image/webp"
+                                                                srcset="./../../img/pic-hotel.webp" />
+                                                            <img src="./../../img/pic-hotel.jpg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="hot-deals__content">
+                                                        <a href="#" class="link">Divas 4*Divas 4*Divas 4*Divas 4*Divas
+                                                            4*Divas 4*</a>
+                                                        <p>Султанахмет, Стамбул</p>
+
+                                                        <div class="rating">
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                        </div>
+
+                                                        <span class="date">17 окт, 6 ночей
+                                                            <span class="city">из Москвы</span></span>
+
+                                                        <div class="hot-deals__prices">
+                                                            <div class="hot-deals__price hot-deals__price--old">
+                                                                132 012 <span class="cur">РУБ.</span>
+                                                            </div>
+                                                            <div class="hot-deals__price">
+                                                                132 012 <span class="cur">РУБ.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hot-deals__item swiper-slide">
+                                                    <div class="picture-block">
+                                                        <div class="hot"></div>
+                                                        <picture>
+                                                            <source type="image/webp"
+                                                                srcset="./../../img/pic-hotel.webp" />
+                                                            <img src="./../../img/pic-hotel.jpg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="hot-deals__content">
+                                                        <a href="#" class="link">Divas 4*</a>
+                                                        <p>Султанахмет, Стамбул</p>
+
+                                                        <div class="rating">
+                                                            <div class="star"></div>
+                                                        </div>
+
+                                                        <span class="date">17 окт, 6 ночей
+                                                            <span class="city">из Москвы</span></span>
+
+                                                        <div class="hot-deals__prices">
+                                                            <div class="hot-deals__price hot-deals__price--old">
+                                                                132 012 <span class="cur">РУБ.</span>
+                                                            </div>
+                                                            <div class="hot-deals__price">
+                                                                132 012 <span class="cur">РУБ.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hot-deals__item swiper-slide">
+                                                    <div class="picture-block">
+                                                        <div class="hot"></div>
+                                                        <picture>
+                                                            <source type="image/webp"
+                                                                srcset="./../../img/pic-hotel.webp" />
+                                                            <img src="./../../img/pic-hotel.jpg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="hot-deals__content">
+                                                        <a href="#" class="link">Divas 4*</a>
+                                                        <p>Султанахмет, Стамбул</p>
+
+                                                        <div class="rating">
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                        </div>
+
+                                                        <span class="date">17 окт, 6 ночей
+                                                            <span class="city">из Москвы</span></span>
+
+                                                        <div class="hot-deals__prices">
+                                                            <div class="hot-deals__price hot-deals__price--old">
+                                                                132 012 <span class="cur">РУБ.</span>
+                                                            </div>
+                                                            <div class="hot-deals__price">
+                                                                132 012 <span class="cur">РУБ.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hot-deals__item swiper-slide">
+                                                    <div class="picture-block">
+                                                        <div class="hot"></div>
+                                                        <picture>
+                                                            <source type="image/webp"
+                                                                srcset="./../../img/pic-hotel.webp" />
+                                                            <img src="./../../img/pic-hotel.jpg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="hot-deals__content">
+                                                        <a href="#" class="link">Divas 4*</a>
+                                                        <p>Султанахмет, Стамбул</p>
+
+                                                        <div class="rating">
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                        </div>
+
+                                                        <span class="date">17 окт, 6 ночей
+                                                            <span class="city">из Москвы</span></span>
+
+                                                        <div class="hot-deals__prices">
+                                                            <div class="hot-deals__price hot-deals__price--old">
+                                                                132 012 <span class="cur">РУБ.</span>
+                                                            </div>
+                                                            <div class="hot-deals__price">
+                                                                132 012 <span class="cur">РУБ.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hot-deals__item swiper-slide">
+                                                    <div class="picture-block">
+                                                        <div class="hot"></div>
+                                                        <picture>
+                                                            <source type="image/webp"
+                                                                srcset="./../../img/pic-hotel.webp" />
+                                                            <img src="./../../img/pic-hotel.jpg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="hot-deals__content">
+                                                        <a href="#" class="link">Divas 4*</a>
+                                                        <p>Султанахмет, Стамбул</p>
+
+                                                        <div class="rating">
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                            <div class="star"></div>
+                                                        </div>
+
+                                                        <span class="date">17 окт, 6 ночей
+                                                            <span class="city">из Москвы</span></span>
+
+                                                        <div class="hot-deals__prices">
+                                                            <div class="hot-deals__price hot-deals__price--old">
+                                                                132 012 <span class="cur">РУБ.</span>
+                                                            </div>
+                                                            <div class="hot-deals__price">
+                                                                132 012 <span class="cur">РУБ.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="list-catalog">
+
+                                    <div class="list-catalog__item">
+                                        <div class="picture-block">
+                                            <picture>
+                                                <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                <img src="./../../img/pic-hotel.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="list-catalog__content">
+                                            <div class="list-catalog__controls">
+                                                <div class="rating">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                                <a href="#" class="btn btn-favorite"></a>
+                                            </div>
+                                            <a href="#" class="link">Gentl Grown Sanya Seashore 4*</a>
+                                            <span class="desc">Дадунхай, Хайнань</span>
+                                            <p>
+                                                Отель в районе Фатих, в 400 м от мечети Сулеймание. В пешей доступности
+                                                — Галатский мост и остановка трамвая.
+                                            </p>
+                                            <div class="list-catalog__bottom">
+                                                <ul class="tags">
+                                                    <li>Об отеле</li>
+                                                    <li>Отзывы</li>
+                                                    <li>На карте</li>
+                                                </ul>
+                                                <div class="list-catalog__prices">
+                                                    <span class="list-catalog__price">132 012 <span
+                                                            class="cur">РУБ.</span></span>
+                                                    <a href="#" class="btn btn--blue list-catalog__btn"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-catalog__item">
+                                        <div class="picture-block">
+                                            <picture>
+                                                <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                <img src="./../../img/pic-hotel.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="list-catalog__content">
+                                            <div class="list-catalog__controls">
+                                                <div class="rating">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                                <a href="#" class="btn btn-favorite"></a>
+                                            </div>
+                                            <a href="#" class="link">Gentl Grown Sanya Seashore 4*</a>
+                                            <span class="desc">Дадунхай, Хайнань</span>
+                                            <p>
+                                                Отель в районе Фатих, в 400 м от мечети Сулеймание. В пешей доступности
+                                                — Галатский мост и остановка трамвая.
+                                            </p>
+                                            <div class="list-catalog__bottom">
+                                                <ul class="tags">
+                                                    <li>Об отеле</li>
+                                                    <li>Отзывы</li>
+                                                    <li>На карте</li>
+                                                </ul>
+                                                <div class="list-catalog__prices">
+                                                    <span class="list-catalog__price">132 012 <span
+                                                            class="cur">РУБ.</span></span>
+                                                    <a href="#" class="btn btn--blue list-catalog__btn"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-catalog__item">
+                                        <div class="picture-block">
+                                            <picture>
+                                                <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                <img src="./../../img/pic-hotel.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="list-catalog__content">
+                                            <div class="list-catalog__controls">
+                                                <div class="rating">
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                </div>
+                                                <a href="#" class="btn btn-favorite"></a>
+                                            </div>
+                                            <a href="#" class="link">Gentl Grown Sanya Seashore 4*</a>
+                                            <span class="desc">Дадунхай, Хайнань</span>
+                                            <p>
+                                                Отель в районе Фатих, в 400 м от мечети Сулеймание. В пешей доступности
+                                                — Галатский мост и остановка трамвая.
+                                            </p>
+                                            <div class="list-catalog__bottom">
+                                                <ul class="tags">
+                                                    <li>Об отеле</li>
+                                                    <li>Отзывы</li>
+                                                    <li>На карте</li>
+                                                </ul>
+                                                <div class="list-catalog__prices">
+                                                    <span class="list-catalog__price">132 012 <span
+                                                            class="cur">РУБ.</span></span>
+                                                    <a href="#" class="btn btn--blue list-catalog__btn"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="best-resorts">
+
+                                    <div class="best-resorts__inner">
+
+                                        <h2 class="caption caption--h4">Лучшие курорты</h2>
+
+                                        <div class="best-resorts__line">
+                                            <div class="best-resorts__media picture-block">
+                                                <a href="#">Алания</a>
+                                                <picture>
+                                                    <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                    <img src="./../../img/pic-hotel.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="best-resorts__content">
+                                                <p>
+                                                    Турция — это страна, которая славится своими великолепными
+                                                    курортами,
+                                                    сочетая в себе богатую историю, красивую природу и теплое
+                                                    гостеприимство. Каждый год миллионы туристов выбирают турецкие
+                                                    курорты
+                                                    для отдыха, наслаждаясь песчаными пляжами, ласковым морем и
+                                                    разнообразием развлечений.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="best-resorts__list">
+                                            <div class="best-resorts__media picture-block">
+                                                <a href="#">Анталия</a>
+                                                <picture>
+                                                    <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                    <img src="./../../img/pic-hotel.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="best-resorts__media picture-block">
+                                                <a href="#">Бодрум</a>
+                                                <picture>
+                                                    <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                    <img src="./../../img/pic-hotel.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="best-resorts__media picture-block">
+                                                <a href="#">Сиде</a>
+                                                <picture>
+                                                    <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                    <img src="./../../img/pic-hotel.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="best-resorts__media picture-block">
+                                                <a href="#">Мармарис</a>
+                                                <picture>
+                                                    <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                    <img src="./../../img/pic-hotel.jpg" alt="">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="best-resorts__line">
+                                            <div class="best-resorts__media picture-block">
+                                                <a href="#">Белек</a>
+                                                <picture>
+                                                    <source type="image/webp" srcset="./../../img/pic-hotel.webp" />
+                                                    <img src="./../../img/pic-hotel.jpg" alt="">
+                                                </picture>
+                                            </div>
+
+                                            <div class="best-resorts__content">
+                                                <p>
+                                                    Турция — это страна, которая славится своими великолепными
+                                                    курортами,
+                                                    сочетая в себе богатую историю, красивую природу и теплое
+                                                    гостеприимство. Каждый год миллионы туристов выбирают турецкие
+                                                    курорты
+                                                    для отдыха, наслаждаясь песчаными пляжами, ласковым морем и
+                                                    разнообразием развлечений.
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <a href="#" class="btn btn--blue">Смотреть больше курортов</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
         </main>
