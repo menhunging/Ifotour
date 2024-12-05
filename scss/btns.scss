@@ -33,6 +33,17 @@
     background-color: $colorYellow;
   }
 
+  &--white {
+    background-color: transparent;
+    border: solid 1px $colorWhite;
+    color: $colorWhite;
+
+    &:hover {
+      background-color: $colorWhite;
+      color: $colorBlack;
+    }
+  }
+
   &:hover {
     transform: scale(0.9);
   }

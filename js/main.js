@@ -95,79 +95,118 @@ $(document).ready(function () {
     });
   }
 
-  // TODO удалить это потом если не понадобиться
+  if ($(".slider-leisure").length > 0) {
+    const swiper = new Swiper(".slider-leisure", {
+      slidesPerView: 3,
+      spaceBetween: 16,
+      watchSlidesProgress: true,
+      loop: false,
+      navigation: {
+        prevEl: ".leisure-format .swiperBtnPrev",
+        nextEl: ".leisure-format .swiperBtnNext",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.1,
+          spaceBetween: 8,
+        },
+        390: {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+        },
+        480: {
+          slidesPerView: 1.8,
+          spaceBetween: 16,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 16,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 16,
+        },
+      },
+    });
+  }
 
-  // if ($(".tabs").length > 0) {
-  //   $(".tabs").tabslet({
-  //     mouseevent: "click",
-  //     attribute: "href",
-  //     animation: true,
-  //   });
-  // }
+  if ($(".slider-attractions").length > 0) {
+    const sliders = document.querySelectorAll(".slider-attractions");
+    let mySwipers = [];
 
-  // if ($(".phone-input").length > 0) {
-  //   $(".phone-input").map(function () {
-  //     $(this).inputmask({
-  //       mask: "+7(999) 999-99-99",
-  //       placeholder: "*",
-  //       showMaskOnHover: false,
-  //       showMaskOnFocus: true,
-  //       clearIncomplete: true,
-  //     });
-  //   });
-  // }
+    function sliderinit() {
+      sliders.forEach((slider, index) => {
+        let prev = $(slider).closest(".attractions").find(".swiperBtnPrev")[0];
+        let next = $(slider).closest(".attractions").find(".swiperBtnNext")[0];
 
-  // if ($(".thisYear").length > 0) {
-  //   let date = new Date();
-  //   $(".thisYear").text(date.getFullYear());
-  // }
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            watchSlidesProgress: true,
+            loop: false,
+            navigation: {
+              prevEl: prev,
+              nextEl: next,
+            },
+            on: {
+              init: function (swiper) {},
+              slideChange: function (swiper) {},
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1.2,
+                spaceBetween: 16,
+                grid: {
+                  rows: 2,
+                  fill: "row",
+                },
+              },
+              390: {
+                slidesPerView: 2,
+                spaceBetween: 18,
+                grid: {
+                  rows: 2,
+                  fill: "row",
+                },
+              },
 
-  // if ($(".modal").length > 0) {
-  //   MicroModal.init({
-  //     openTrigger: "data-modal",
-  //     onShow: () => {
-  //       $("body").addClass("modal-open");
-  //     },
-  //     onClose: () => {
-  //       $("body").removeClass("modal-open");
-  //     },
-  //   });
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 16,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 16,
+              },
+              1280: {
+                slidesPerView: 4,
+                spaceBetween: 16,
+              },
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
 
-  //   $("[data-modal]").map(function () {
-  //     $(this).click((e) => {
-  //       e.preventDefault();
-  //       $("body").addClass("modal-open");
-  //     });
-  //   });
+    sliders.length && sliderinit();
+  }
 
-  //   $("[data-micromodal-close]").map(function () {
-  //     $(this).click((e) => {
-  //       // e.preventDefault();
-  //       if ($(this).attr("data-modal")) {
-  //         setTimeout(() => {
-  //           $("body").addClass("modal-open");
-  //         }, 0.1);
-  //       }
-  //     });
-  //   });
-  // }
-
-  // if ($(".grettings-slider").length > 0) {
-  //   const swiper = new Swiper(".grettings-slider", {
-  //     slidesPerView: 1,
-  //     spaceBetween: 0,
-  //     watchSlidesProgress: true,
-  //     loop: true,
-  //     navigation: {
-  //       prevEl: ".swiperBtnPrev",
-  //       nextEl: ".swiperBtnNext",
-  //     },
-  //     breakpoints: {
-  //       0: {
-  //         slidesPerView: 1,
-  //         spaceBetween: 0,
-  //       },
-  //     },
-  //   });
-  // }
+  if ($(".phone-input").length > 0) {
+    $(".phone-input").map(function () {
+      $(this).inputmask({
+        mask: "+7(999) 999-99-99",
+        placeholder: "*",
+        showMaskOnHover: false,
+        showMaskOnFocus: true,
+        clearIncomplete: true,
+      });
+    });
+  }
 });
