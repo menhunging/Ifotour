@@ -1068,6 +1068,7 @@ h4,
 
 .header-new {
   position: relative;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .header-new-top {
   border-bottom: solid 1px rgba(57, 57, 57, 0.2);
@@ -1261,14 +1262,19 @@ h4,
   align-items: center;
   gap: 28px;
 }
-@media (max-width: 1279px) {
+@media (max-width: 1439px) {
   .menu-new .menu__list {
     gap: 16px;
   }
 }
+@media (max-width: 1279px) {
+  .menu-new .menu__list {
+    gap: 10px;
+  }
+}
 @media (max-width: 1023px) {
   .menu-new .menu__list {
-    gap: 12px;
+    gap: 8px;
   }
 }
 @media (max-width: 767px) {
@@ -1279,6 +1285,7 @@ h4,
   }
 }
 .menu-new a {
+  white-space: nowrap;
   text-decoration: underline;
   text-decoration-color: transparent;
   -webkit-transition: text-decoration 0.3s;
@@ -1288,6 +1295,18 @@ h4,
 }
 .menu-new a:hover {
   text-decoration-color: rgb(57, 57, 57);
+}
+@media (max-width: 1279px) {
+  .menu-new a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header-new .TVBMediumSize {
+    padding: 8px 6px !important;
+    font-size: 10px !important;
+  }
 }
 
 .footer-new {
@@ -5280,7 +5299,7 @@ h4,
   .hotel-name .btn {
     margin-top: 30px;
     height: 40px;
-    line-height: 28px;
+    line-height: 32px;
     min-height: initial;
   }
 }
@@ -5560,6 +5579,10 @@ h4,
   top: 0;
   z-index: 2;
   opacity: 0.7;
+}
+
+.country-catalog .TVFreeButton9964526 .TVBColor {
+  border-radius: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */
